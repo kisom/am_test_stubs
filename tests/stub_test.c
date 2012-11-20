@@ -80,7 +80,7 @@ main(void)
         if (NULL == CU_add_test(tsuite, "example test", empty_test))
                 fireball();
 
-        CU_base_set_mode(CU_BRM_VERBOSE);
+        CU_basic_set_mode(CU_BRM_VERBOSE);
         CU_basic_run_tests();
         fails = CU_get_number_of_tests_failed();
         warnx("%u tests failed", fails);
