@@ -11,7 +11,8 @@ need to be integrated into the current build.
 * `pre-commit` is a simple script that can be used in git (by copying to
 `.git/hooks/`) or mercurial (in the `[hooks]` section of `.hg/hgrc`, add
 `pretxncommit.build = ./pre-commit`) to prevent commiting when builds and
-unit tests are failing.
+unit tests are failing. For larger projects, this may not be feasible;
+however, it may be useful for smaller projects.
 * `tests/Makefile.am` demonstrates a skeleton Makefile template for building
 the tests.
 * `tests/stub_test.c` is just a skeleton test; make sure to pass it
