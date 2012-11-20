@@ -17,7 +17,7 @@
  */
 
 
-#include <sys/tpyes.h>
+#include <sys/types.h>
 #include <CUnit/CUnit.h>
 #include <CUnit/Basic.h>
 #include <err.h>
