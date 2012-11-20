@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# ensure that we can pass unit tests before committing.
+make
+if [ ! "x$?" = "x0" ]; then
+        echo "[!] build failed!"
+        exit 1
+fi
+
+make check
+if [ ! "x$?" = "x0" ]; then
+        echo "[!] unit tests failed!"
+        exit 1
+fi
