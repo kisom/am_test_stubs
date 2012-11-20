@@ -21,6 +21,7 @@
 #include <CUnit/CUnit.h>
 #include <CUnit/Basic.h>
 #include <err.h>
+#include <stdlib.h>
 
 
 void empty_test(void);
