@@ -1,4 +1,4 @@
-# am_stub tests
+# am_stub_tests
 ## automake CUnit test stubs
 
 This project provides quick-start templates to add unit tests to your
