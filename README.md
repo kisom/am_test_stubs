@@ -20,7 +20,8 @@ the tests.
 the `./Makefile.am` provided here if you aren't sure what to add.
 
 ### License
-`am_stub_tests` is provided under an ISC license.
+`am_stub_tests` is provided under an
+[ISC license](https://raw.github.com/kisom/am_test_stubs/master/LICENSE).
 
 ### Author
 Kyle Isom (kyle `:at` tyrfingr `:dot:` is) put this together.
