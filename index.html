@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>am_stub_tests by kisom</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>am_stub_tests</h1>
+        <p>Automake / CUnit test stubs for C programs.</p>
+
+        <p class="view"><a href="https://github.com/kisom/am_test_stubs">View the Project on GitHub <small>kisom/am_test_stubs</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/kisom/am_test_stubs/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/kisom/am_test_stubs/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/kisom/am_test_stubs">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p>This project provides quick-start templates to add unit tests to your
+C code using <a href="http://cunit.sourceforge.net/">CUnit</a>.</p>
+
+<h3>What's provided</h3>
+
+<ul>
+<li>
+<code>Makefile.am</code> has a few lines in it relevant to unit testing; they just
+need to be integrated into the current build.</li>
+<li>
+<code>tests/Makefile.am</code> demonstrates a skeleton Makefile template for building
+the tests.</li>
+<li>
+<code>tests/stub_test.c</code> is just a skeleton test; make sure to pass it
+<code>-DTEST_SUITE="\"your_test_name\"" in the CFLAGS (see</code>tests/Makefile.am`).</li>
+</ul><h3>Using</h3>
+
+<ol>
+<li>Create the initial <code>tests</code> directory:
+<code>cp -r /path/to/this/repo/tests /path/to/your/code</code>
+</li>
+<li>Make sure the tests are called in your top level <code>Makefile.am</code>. Consult
+the <code>./Makefile.am</code> provided here if you aren't sure what to add.</li>
+</ol><h3>License</h3>
+
+<p><code>am_stub_tests</code> is provided under an
+<a href="https://raw.github.com/kisom/am_test_stubs/master/LICENSE">ISC license</a>.</p>
+
+<h3>Author</h3>
+
+<p>Kyle Isom (kyle <code>:at</code> tyrfingr <code>:dot:</code> is) put this together.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/kisom">kisom</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
