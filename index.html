@@ -38,6 +38,12 @@ C code using <a href="http://cunit.sourceforge.net/">CUnit</a>.</p>
 <code>Makefile.am</code> has a few lines in it relevant to unit testing; they just
 need to be integrated into the current build.</li>
 <li>
+<code>pre-commit</code> is a simple script that can be used in git (by copying to
+<code>.git/hooks/</code>) or mercurial (in the <code>[hooks]</code> section of <code>.hg/hgrc</code>, add
+<code>pretxncommit.build = ./pre-commit</code>) to prevent commiting when builds and
+unit tests are failing. For larger projects, this may not be feasible;
+however, it may be useful for smaller projects.</li>
+<li>
 <code>tests/Makefile.am</code> demonstrates a skeleton Makefile template for building
 the tests.</li>
 <li>
