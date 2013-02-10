@@ -25,13 +25,15 @@
 #include <sysexits.h>
 
 
+#define TEST_SUITE      "sample test suite"
+
+
 void empty_test(void);
 
 
 /*
- * Stubs required by the test suite, but for which no functionality is
- * required in this code. init_test is called each time a test is run,
- * and cleanup is run after every test.
+ * init_test is called each time a test is run, and cleanup is run after
+ * every test.
  */
 int init_test(void)
 {
@@ -65,8 +67,6 @@ main(void)
 {
         CU_pSuite       tsuite = NULL;
         unsigned int    fails;
-
-        printf("[+] running tests for dirutils\n");
 
         if (!(CUE_SUCCESS == CU_initialize_registry())) {
                 errx(EX_CONFIG, "failed to initialise test registry");
